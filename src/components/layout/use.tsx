@@ -1,6 +1,5 @@
-import React from "react";
 import { Outlet } from "react-router-dom";
-import header from "../../utils/header";
+
 import Header from "../../utils/header";
 
 type Props = {};
