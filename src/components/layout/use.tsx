@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 
 import Header from "../../utils/header";
+import Footer from "../../utils/footer";
 
 type Props = {};
 
@@ -13,7 +14,9 @@ const UserLayout = (props: Props) => {
       </header>
       {/* Content */}
       <Outlet></Outlet>
-      <footer>Footer</footer>
+      <footer>
+        <Footer></Footer>
+      </footer>
     </>
   );
 };

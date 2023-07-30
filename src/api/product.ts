@@ -4,6 +4,9 @@ import { instance } from "./instance";
 export const getAllProducts = () => {
   return instance.get("/products");
 };
+export const getById = (id: number | string) => {
+  return instance.get(`/products/${id}`);
+};
 export const deleteProduct = (id: string | number) => {
   return instance.delete(`/products/${id}`, {
     headers: {
